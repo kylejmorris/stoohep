@@ -12,6 +12,12 @@ import time
 import os
 import traceback
 import argparse
+from human_eval.data import write_jsonl, read_problems
+
+problems = read_problems()
+
+]
+write_jsonl("samples.jsonl", samples)
 
 use_seed_algorithm = config["use_seed_algorithm"]
 task = config["task"]
